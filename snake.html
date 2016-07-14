@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>贪吃蛇</title>
+  <style type="text/css">
+    #container {
+      width: 600px;
+      margin: auto;
+      font-size: 0px;
+    }
+    
+    #score{
+      text-align: center;
+      font-size: 60px;
+      font-family: cursive;
+    }
+
+    #container div{
+      width: 60px;
+      height: 60px;
+      background: #FFC0CB;
+      display: inline-block;
+      border: solid 1px white;
+      box-sizing: border-box;
+    }
+
+    #container .snakehead{
+      background: #FF1493;
+    }
+
+    #container .snake{
+      background: #FF69B4;
+    }
+
+    #container .fruit{
+      background: white;
+    }
+</style>
+</head>
+
+<body>
+  <h1 id="score"></h1>
+  <div id="container"></div>
+</body>
+<script src="main.js"></script>
+</html>
