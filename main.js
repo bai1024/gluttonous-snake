@@ -34,7 +34,7 @@ var h1 = document.getElementById("score")
 
 function updateScore() {
   var score = (snake.positions.length - 1) * 10
-  h1.innerText = score
+  h1.innerText = "Score:" + score
 }
 
 function mainLoop() {
