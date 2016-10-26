@@ -1,0 +1,100 @@
+
+*
+  {
+    font-family:  'Patrick Hand SC', cursive
+  }
+body {
+      background-image: url(../images/bg-img.jpeg);
+    }
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+  #container {
+    width: 600px;
+    margin: auto;
+    font-size: 0px;
+  }
+  
+  #score{
+    text-align: center;
+    font-size: 60px;
+  }
+
+  #container div{
+    width: 60px;
+    height: 60px;
+    background: #E6E0E5;
+    display: inline-block;
+    border: solid 1px white;
+    box-sizing: border-box;
+  }
+
+  #container .snakehead{
+    background-image:url(../images/head.svg);
+    background-size: cover;
+  }
+
+  #container .snake{
+    background-image:url(../images/body.svg);
+    background-size: cover;
+  }
+
+
+  #container .fruit{
+    background-image:url(../images/apple.svg);
+    background-size: cover;
+  }
+
+  .alert {
+  display: none;
+  color: #6b6b6b;
+  opacity: 1;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 450px;
+  min-height: 200px;
+  top: -420px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: all 0.7s ease;
+}
+.alert h2 {
+  margin: 20px 0 5px 0;
+}
+.alert .alert-content {
+  display: block;
+  font-size: 25px;
+  margin: 0;
+  padding: 20px 20px 0px 20px;
+}
+.alert .alert-btn-container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 0 10px 0;
+}
+.alert .alert-btn-container button {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #6b6b6b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.alert .alert-btn-container .confirm {
+  color: #91c8ff;
+  border-color: #91c8ff;
+  background-color: transparent;
+}

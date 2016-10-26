@@ -13,7 +13,7 @@ var snake = {
   fruit: {x: 3, y: 4},
 }
 
-var isStart = document.addEventListener("keydown", function(evt) {
+document.addEventListener("keydown", function(evt) {
   if(evt.keyCode === 32) { 
     function getSquareByPos(pos) {
       var index = pos.y * width + pos.x
@@ -37,6 +37,7 @@ var isStart = document.addEventListener("keydown", function(evt) {
   function updateScore() {
       var score = (snake.positions.length - 1) * 10
       h1.innerText = "Score:" + score
+      $(".alert-content").find("strong").text(score)
     }
 
     function mainLoop() {
@@ -128,6 +129,7 @@ var isStart = document.addEventListener("keydown", function(evt) {
       if(isDead) {
         clearInterval(interval)
         h1.innerText += " Game Over"
+        $(".alert").css("display","flex")
         return
       } else {
         drawSnakeAndFruit()
@@ -195,7 +197,11 @@ var isStart = document.addEventListener("keydown", function(evt) {
     })
 
   updateScore()
-  var interval = setInterval(mainLoop, 110)
+  var interval = setInterval(mainLoop, 150)
   }
 
+})
+
+$(".confirm").click(function(){
+  window.location.reload() 
 })

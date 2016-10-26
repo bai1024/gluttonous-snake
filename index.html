@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>贪吃蛇</title>
-  <link rel="stylesheet" href="main.css"></head>
-
+  <link rel="stylesheet" href="css/main.css"></head>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
 <body>
 
   <h1 id="score">Score:0</h1>
   <p>按“空格键”开始，“↑ ↓ ← →”控制方向</p>
   <div id="container"></div>
+  <div class="alert">
+      <h2>Game Over!</h2>
+      <div class="alert-content">
+        Your score is
+        <strong>0</strong>
+       </div>
+      <div class="alert-btn-container">
+        <button class="confirm">Replay</button>
+      </div>
+  </div>
 
 </body>
-<script src="main.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/main.js"></script>
 </html>
