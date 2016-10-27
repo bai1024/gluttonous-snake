@@ -130,6 +130,7 @@ document.addEventListener("keydown", function(evt) {
         clearInterval(interval)
         h1.innerText += " Game Over"
         $(".alert").css("display","flex")
+        $(".alertBoard").css("display","block")
         return
       } else {
         drawSnakeAndFruit()
@@ -200,8 +201,14 @@ document.addEventListener("keydown", function(evt) {
   var interval = setInterval(mainLoop, 150)
   }
 
+$(".confirm").click(function(){
+  h1.innerText = "Score:" + 0
+  $(".alert").css("display","none")
+  $(".alertBoard").css("display","none")
+  $("#container > div").removeClass("snakehead")
+  $("#container > div").removeClass("fruit")
+  $("#container > div").removeClass("newBody")
 })
 
-$(".confirm").click(function(){
-  window.location.reload() 
 })
+
