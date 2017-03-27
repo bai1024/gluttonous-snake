@@ -7,6 +7,7 @@ body {
   background-image: url(../images/bg-img.jpeg);
   background-size: contain;
   background-attachment: fixed;
+  margin:0;
 }
 
 p {
